@@ -78,6 +78,6 @@ config = {
 
 The thread operates independently, checking for training opportunities and publishing results without external coordination.
 
-### Diagram
+## Architectual Loop Diagram
 
 ![SMOCS ML Training Thread Diagram](/img/diagrams/mltrainingthread-architecture-diagram.png "SMOCS ML Training Thread Architecture")

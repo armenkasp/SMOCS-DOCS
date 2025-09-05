@@ -47,6 +47,6 @@ Each thread manages its own resources (Kafka connections, database cursors, mode
 
 This three-thread architecture creates a complete machine learning pipeline that ingests streaming data, continuously improves models, and provides real-time intelligence - all while maintaining the simplicity and reliability principles that define the SMOCS platform.
 
-### Diagram
+## Architectual Loop Diagram
 
-![SMOCS Architecture Diagram](/img/diagrams/agentbase-architecture-diagram.png "SMOCS System Architecture")
+![SMOCS Base Agent Diagram](/img/diagrams/agentbase-architecture-diagram.png "SMOCS Base Agent Architecture")
