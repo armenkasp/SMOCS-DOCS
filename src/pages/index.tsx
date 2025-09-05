@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -17,6 +17,14 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.heroImage}>
+          <img
+            src={useBaseUrl('/img/SMOCS-architecture-diagram.png')}
+            alt="SMOCS System Overview"
+            style={{maxWidth: '600px', width: '100%', height: 'auto', margin: '20px 0'}}
+          />
+        </div>
+        
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"

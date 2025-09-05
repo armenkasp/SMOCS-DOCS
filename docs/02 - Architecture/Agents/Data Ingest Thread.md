@@ -59,3 +59,7 @@ config = {
 - **Memory management**: Don't accumulate state between messages
 
 The base classes handle all infrastructure complexity - users only implement domain-specific data transformation logic.
+
+### Diagram
+
+![SMOCS Data Ingest Thread Diagram](/img/diagrams/dataingestthread-architecture-diagram.png "SMOCS Data Ingest Thread Architecture")

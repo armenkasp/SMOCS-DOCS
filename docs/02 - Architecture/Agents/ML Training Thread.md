@@ -77,3 +77,7 @@ config = {
 - **Blocking operations**: Training can be long-running (single-threaded is acceptable)
 
 The thread operates independently, checking for training opportunities and publishing results without external coordination.
+
+### Diagram
+
+![SMOCS ML Training Thread Diagram](/img/diagrams/mltrainingthread-architecture-diagram.png "SMOCS ML Training Thread Architecture")

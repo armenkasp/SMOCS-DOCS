@@ -73,3 +73,7 @@ config = {
 - **Error handling**: Graceful degradation when models unavailable
 
 The thread operates as a streaming processor, consuming sensor data and publishing enriched results with ML insights in real-time.
+
+### Diagram
+
+![SMOCS ML Inference Thread Diagram](/img/diagrams/mlinferencethread-architecture-diagram.png "SMOCS ML Inference Thread Architecture")

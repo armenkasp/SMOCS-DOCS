@@ -46,3 +46,7 @@ This architecture creates natural temporal decoupling: data ingestion operates a
 Each thread manages its own resources (Kafka connections, database cursors, model memory) and implements appropriate cleanup procedures. The `AgentBase` class monitors thread health and can restart individual components without affecting others.
 
 This three-thread architecture creates a complete machine learning pipeline that ingests streaming data, continuously improves models, and provides real-time intelligence - all while maintaining the simplicity and reliability principles that define the SMOCS platform.
+
+### Diagram
+
+![SMOCS Architecture Diagram](/img/diagrams/agentbase-architecture-diagram.png "SMOCS System Architecture")
