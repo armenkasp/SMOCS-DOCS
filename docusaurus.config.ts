@@ -51,6 +51,11 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,        // Set to true if you want to disable the toggle
+      respectPrefersColorScheme: false, // Set to true to respect user's system preference
+    },
     navbar: {
       title: 'SMOCS Docs',
       logo: {

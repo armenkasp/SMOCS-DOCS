@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# SMOCS Architecture Overview
+## SMOCS Architecture Overview
 
 SMOCS (Streaming Monitoring Optimization Control System) is a Kafka-based distributed streaming platform designed for real-time sensor data processing, ML model training/inference, and control system integration.
 
