@@ -22,4 +22,15 @@ Subclasses must implement their own `start()` method for specific data source in
 - **start()**: Abstract method for subclasses to implement data source logic
 - **cleanup()**: Flushes pending messages and closes producer/admin connections
 
+#### **KafkaProducerBase Loop** 
+```python
+# Producers are event-driven rather than polling
+def start(self):
+    self.setup_kafka_producer()
+    # Source-specific loop (MQTT callbacks, EPICS polling, etc.)
+    while True:
+        data = get_source_data()  # Source-specific implementation
+        kafka_message = transform_data(data)
+        self.send_to_kafka(topic, kafka_message)
+```
 

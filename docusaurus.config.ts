@@ -28,9 +28,6 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -42,21 +39,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/JeffersonLab/SMOCS',
+          editUrl: 'https://github.com/JeffersonLab/SMOCS',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/JeffersonLab/SMOCS',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,                      
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -79,9 +64,8 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/armenkasp/SMOCS-DOCS',
+          href: 'https://github.com/JeffersonLab/SMOCS',
           label: 'GitHub',
           position: 'right',
         },
@@ -112,17 +96,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/JeffersonLab/SMOCS',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} SMOCS Documentaiton. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SMOCS Project. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

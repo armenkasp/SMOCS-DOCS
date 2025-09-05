@@ -19,7 +19,16 @@ To implement a subclass that will consume information from a Kafka stream, you m
 - **subscribe_to_topics()**: Handles topic subscription logic
 - **start()**: Main entry point that sets up and starts consumption
 - **consume_messages()**: Main polling loop for message processing
-- **process_message()**: Abstract method implemented by subclasses
-- **cleanup()**: Resource cleanup and connection closing
+- **process_message()**: Abstract method implemented by 
+
+#### **KafkaConsumerBase Loop**
+```python
+while self.running:
+    message_batch = self.consumer.poll(timeout_ms=1000)
+    for topic_partition, messages in message_batch.items():
+        for message in messages:
+            success = self.process_message(message.value, message.topic, 
+                                         message.partition, message.offset)
+```
 
 

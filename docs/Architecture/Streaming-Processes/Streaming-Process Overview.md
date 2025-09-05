@@ -27,3 +27,13 @@ Abstract base class for Kafka stream processors that combines consumer and produ
 3. Handles tuple outputs in format: `(topic, message)` or `(topic, message, key)`
 4. Uses composed `KafkaProducerBase` to send results to destination topics
 5. Includes comprehensive error handling for both processing and publishing steps
+
+#### **KafkaStreamingProcessBase Loop**
+```python
+while self.running:
+    message_batch = self.consumer.poll(timeout_ms=1000)
+    for message in messages:
+        success, outputs = self.process_message(message)
+        for topic, message_content, key in outputs:
+            self.producer.send_to_kafka(topic, message_content, key)
+```
