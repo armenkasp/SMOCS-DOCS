@@ -11,32 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Unified Configuration Management',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Eliminates configuration drift across environments and makes deployments completely reproducible.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Native Streaming Data Architecture',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Purpose-built for continuous streaming data processing, using Kafka as the central nervous system for all data flow.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Operational Simplicity',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Eliminates the complexity that plagues most distributed systems by adopting single-threaded event loops throughout.
       </>
     ),
   },
